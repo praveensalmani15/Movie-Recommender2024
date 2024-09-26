@@ -21,7 +21,7 @@ demo_template='''Based on {user_input} provides Movie Recommendation'''
 template=PromptTemplate(input_variable=['user_input'],template=demo_template)
 
 # Google Gemini Model
-llm=ChatGoogleGenerativeAI(model='gemini-pro',api_key='GOOGLE-API-KEY ')
+llm=ChatGoogleGenerativeAI(model='gemini-pro',api_key=os.getenv('GOOGLE-API-KEY'))
 
 if user_input:
     prompt=template.format(user_input=user_input)
