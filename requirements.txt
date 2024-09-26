@@ -1,3 +1,5 @@
 streamlit # Front end
 google-generativeai # Generative AI
-python-dotenv # Meant for local environment
+python-dotenv # Meant for local environme
+langchain
+langchain-google-genai
