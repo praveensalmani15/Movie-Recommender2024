@@ -13,11 +13,11 @@ genai.configure(api_key=os.getenv('GOOGLE-API-KEY'))
 headers={"authorization":st.secrets['GOOGLE-API-KEY'],"Content-type":"application/json"}
 
 #Design the Page...
-st.title("Movie Recommeder Systems...")
+st.title("Generate Movie Recommendations...")
 user_input=st.text_input('Enter the Movie title,genre or keyword')
 
 # Prompt Template
-demo_template='''Based on {user_input} provides Movie Recommendation'''
+demo_template='''Based on {user_input} provides 10 Movie Recommendation with one liner plot detail'''
 template=PromptTemplate(input_variable=['user_input'],template=demo_template)
 
 # Google Gemini Model
