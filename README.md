@@ -1,2 +1,2 @@
-# Movie-Recommender2024
+# Movie-Recommendation System 2024
 Building a Movie Recommender System Using Generative AI Models.....
